@@ -1,0 +1,102 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Listings</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/mylistings">My Listings</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Notification</a>
+          </li> -->
+          <!-- <li class="nav-item">
+
+            <a *ngIf="!uname"  class="nav-link" routerLink="/login">Login</a>
+            <a *ngIf="uname" class="nav-link"  >{{uname}}&nbsp; <button class="ss" (click)="logout()" > Logout</button></a>
+          </li> -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+         
+        </ul>
+    
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-5 text-center">
+            <h4>Welcome to DreamHomes<br> </h4>
+        </div>
+    </div>
+    <div class="row mt-3" >
+        <div class="col-2"></div>
+        <div class="col-8 d-flex justify-content-center" >
+<form action="" [formGroup]="regForm" (ngSubmit)="register()" >
+    <table class="shadow mb-4 rounded " cellpadding="25" cellspacing="25" style= "width: 800px;">
+       <tr>
+           <div class="container">
+
+           <div class="row">
+               <h3 style="text-align: center;"class="ss">Register Now...</h3>
+               <div class="col-8 ss">
+                   <input type="text" class="form-control" placeholder="First Name" name="first_name" formControlName="first_name">
+               </div>
+               <div class="col-4 ss">
+                   <input type="text" class="form-control" placeholder="Last Name" name="last_name" formControlName="last_name">
+               </div>
+               <div class="col-6 ss"><input type="text" class="form-control" placeholder="Username" name="username" formControlName="username"></div>
+            <!-- <div class="col-8"><input type="password" class="form-control" placeholder="password"></div> -->
+            <div class="col-6 ss"><input type="password" class="form-control" placeholder="Enter password" name="password" formControlName="password"></div>
+               <div class="col-6 ss" >
+                   <input type="text" class="form-control" placeholder="Mob no" name="mobno" formControlName="mobno">
+               </div>
+               <div class="col-6 ss">
+                <input type="email" class="form-control" placeholder="Email" name="email" formControlName="email">
+            </div>
+           <div class="col-4 ss">
+               <input type="text" class="form-control" placeholder="Place" name="place" formControlName="place">
+           </div>
+            
+            <div class="col-4 ss">
+                <input type="date" name="" value="2000-01-01" class="form-control" id="" name="dob" formControlName="dob">
+            </div>
+            <div class="col-4 ">
+                <label for="">Prof Pic</label>
+                <input type="file" class="" name="prof_pic" (change)="fileup($event)" >
+            </div>   
+            <div class="col-6 ss">
+                   <button type="submit" class="form-control btn btn-primary ">Submit</button>
+               </div>
+               <div class="col-6 ss">
+                   <button class="form-control btn btn-primary "type="Reset">Reset</button></div>
+           </div></div>
+       </tr>
+       
+    </table>
+</form>
+</div>
+<div class="c
+ol-2"></div>
+</div>
+</div>
+

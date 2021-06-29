@@ -1,0 +1,18 @@
+.card-title,.card-text{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+table{
+    color:white
+}
+.nav-link {
+    color: rgb(248, 227, 227) !important;
+    }
+.nav-item a {
+    padding-right: 5.5rem;
+    padding-left: 0.5rem;
+}
+.card{
+    background-color: #33313B;
+}

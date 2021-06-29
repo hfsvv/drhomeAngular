@@ -1,0 +1,31 @@
+.nav-link {
+    color: rgb(248, 227, 227) !important;
+    }
+.nav-item a {
+    padding-right: 5.5rem;
+    padding-left: 0.5rem;
+}
+button{
+    background-color: #d70e1d;
+    border: #d70e1d;
+    position:relative;
+    left:28%;
+}
+button:hover{
+    background-color: white;
+    border: #d70e1d; 
+    color: #d70e1d;
+    
+}
+.card{
+    border-radius: 20px; 
+    background-color: #33313B;
+}
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    overflow: visible;
+}
+.col-4{
+    padding-bottom: 40px;
+}

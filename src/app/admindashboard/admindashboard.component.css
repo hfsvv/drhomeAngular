@@ -1,0 +1,19 @@
+
+    .kk{
+        background-color: #d70e1d;
+        border: #d70e1d;
+    }
+    .kk:hover{
+        background-color: white;
+        border: #d70e1d; 
+        color: #d70e1d
+        
+    }
+    .nav-link {
+        color: rgb(248, 227, 227) !important;
+        }
+    .nav-item a {
+        padding-right: 5.5rem;
+        padding-left: 0.5rem;
+    }
+    

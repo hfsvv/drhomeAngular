@@ -1,0 +1,32 @@
+.ss{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table{
+    border-radius: 20px !important; 
+    background-color: #33313B;
+
+}
+button{
+    background-color: #d70e1d;
+    border: #d70e1d;
+}
+button:hover{
+    background-color: white;
+    border: #d70e1d; 
+    color: #d70e1d
+    
+}
+h2{
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+.kk{
+    background-color: #d70e1d;
+    border: #d70e1d; 
+}
+.kk:hover{
+    color: #d70e1d !important;
+    background-color: white;
+    border: #d70e1d;
+}

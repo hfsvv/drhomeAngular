@@ -1,0 +1,114 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home">Listings</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/mylistings">My Listings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/post"> Add Your Post</a>
+        </li>
+        <li class="nav-item">
+
+          <a *ngIf="!uname"  class="nav-link" routerLink="/login">Login</a>
+          <a *ngIf="uname" class="nav-link"  >{{uname}}&nbsp; <button class="ss" (click)="logout()" > Logout</button></a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+       
+      </ul>
+  
+    </div>
+  </div>
+</nav>
+
+<div class="container" *ngFor= "let lists of list">
+    <!-- <div class="row"> -->
+        <!-- <div class="col-2"></div> -->
+        <!-- <div class="col-8  d-flex justify-content-center" > -->
+            <div class="card mb-3" >
+                <img src="{{path}}{{lists.photo_main}}" class="card-img-top" alt="..." height="400px" >
+                <div class="card-body">
+                  <h5 class="card-title">{{lists.title}}</h5>
+
+                  <p class="card-text">Price: {{lists.price}}</p>
+                  <p class="card-text"><small class="text-muted">{{lists.list_date}}</small></p>
+                  <p class="card-text"><a href="{{wplink}}"><img src="../../assets/images/whatsapp.png" width="40px" alt=""></a><a href="tel:{{lists.mobno}}"><img src="../../assets/images/Untitled-1.png" width="50px"   alt=""></a></p>
+                </div>
+              <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-2"></div> -->
+    </div>
+    <table class="table table-borderless">
+    
+      <tbody>
+        <tr>
+          <th scope="row">Created by</th>
+          <td>{{lists.uname}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">Description</th>
+          <td>{{lists.description}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">Address</th>
+          <td>{{lists.address}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">City</th>
+          <td>{{lists.city}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">state</th>
+          <td>{{lists.state}}</td>
+        </tr>
+        <tr>
+          <th scope="row">mobno</th>
+          <td>{{lists.mobno}}</td>
+        </tr>
+        <tr>
+          <th scope="row">whtspno</th>
+          <td>{{lists.whtspno}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Bedrooms</th>
+          <td>{{lists.bedrooms}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Bathrooms</th>
+          <td>{{lists.bathrooms}}</td>
+          <tr>
+            <th scope="row">sqft</th>
+            <td>{{lists.sqft}}</td>
+          </tr>
+      
+      </tbody>
+    </table>
+</div>

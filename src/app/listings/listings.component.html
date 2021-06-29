@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Listings</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/mylistings">My Listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/post"> Add Your Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Notification</a>
+          </li>
+          <li class="nav-item">
+
+            <a *ngIf="!uname"  class="nav-link" routerLink="/login">Login</a>
+            <a *ngIf="uname" class="nav-link"  >{{uname}}&nbsp; <button class="ss" (click)="logout()" > Logout</button></a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+         
+        </ul>
+    
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container-fluid" >
+    <h1>Choose Your Future Home</h1></div>
+    <h1>Choose Your Future Home</h1>
+    <div class="container">
+<div class="row">
+    <div class="col-4" *ngFor= "let lists of list">
+    <div class="card " style="width: 18rem;" >
+  <img src="{{path}}{{lists.photo_main}}"class="card-img-top" alt="..." width="50px" height="250px">
+  <div class="card-body">
+      <h3 class="card-text" style="text-align: center"> {{lists.title}}</h3>
+      <h3></h3>
+    <p class="card-text" style="text-align: center;">Price:{{lists.price}}</p>
+    <a routerLink="/listdet/{{lists.id}}"><button class="card-text btn btn-primary pb-4" style="text-align: center;" >View More</button></a>
+  </div></div>
+</div></div></div>
