@@ -23,7 +23,7 @@ export class LisdetComponent implements OnInit {
   list_date:any
   photo_main:any
   list:any
-  path:any="https://drhomes.herokuapp.com/"
+  path:any="https://dreamhomesstr.s3.ap-south-1.amazonaws.com"
   uname:any
   name=""
   wplink=""
