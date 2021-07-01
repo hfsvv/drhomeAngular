@@ -20,7 +20,7 @@ export class AdminpostComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.usname=localStorage.getItem("auser")
+    this.usname=localStorage.getItem("user")
     this.uname=this.dataservice2.ausercl()
     if(this.tok){
       this.dataservice.agetlist(this.tok).subscribe(

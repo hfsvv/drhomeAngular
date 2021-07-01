@@ -19,7 +19,7 @@
           </li>
           <li class="nav-item">
             <a *ngIf="!usname"  class="nav-link" routerLink="/login">Login</a>
-            <a *ngIf="usname" class="nav-link"  >{{uname}}&nbsp; <button class="ss" (click)="logout()" > Logout</button></a>
+            <a *ngIf="usname" class="nav-link" >{{usname}}&nbsp; <button class="ss" (click)="logout()" > Logout</button></a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
