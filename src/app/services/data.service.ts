@@ -17,7 +17,7 @@ export class DataService {
     })
     httpHeaders.set('token',tok)
     console.log(httpHeaders);
-    return this.http.get('http://127.0.0.1:8000/api/v1/prop/users',{headers:httpHeaders})
+    return this.http.get('https://drhomes.herokuapp.com/api/v1/prop/users',{headers:httpHeaders})
   }
   login(data:any) {
     

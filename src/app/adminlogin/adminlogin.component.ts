@@ -50,7 +50,7 @@ export class AdminloginComponent implements OnInit {
       },
       error=>{
        console.log(error);
-       alert(error.message)
+       alert("Invalid password")
         
       }
     ); 

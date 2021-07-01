@@ -30,7 +30,8 @@ export class AdmindashboardComponent implements OnInit {
       },
       error=>{
         alert(error.statusText);
-        this.router.navigateByUrl("admin")
+        console.log(error);
+      
       } 
     )
   }
