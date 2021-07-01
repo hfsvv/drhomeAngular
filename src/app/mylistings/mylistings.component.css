@@ -14,3 +14,13 @@
     background-color: white;
     border: #d70e1d;
 }
+@media only screen and (max-width:600px){
+form{
+    overflow: scroll;
+}}
+.fff h4{
+    padding-top: 30px;
+}
+.mt-5 {
+    margin-top: 7rem!important;
+}

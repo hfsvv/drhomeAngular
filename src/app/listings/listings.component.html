@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/images/Dream-home-logo-vector.jpg" alt="" height="80px" width="320px"></a>
+      <a class="navbar-brand" href="#"><img src="assets/images/Dream-home-logo-vector.jpg" alt="" height="80px" width="220px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,16 +48,16 @@
 
 <div class="container-fluid" >
     <h1>Choose Your Future Home</h1></div>
-    <h1>Choose Your Future Home</h1>
+  
     <div class="container">
 <div class="row">
-    <div class="col-4" *ngFor= "let lists of list">
-    <div class="card " style="width: 18rem;" >
+    <div class="col-6 col-lg-4 vvv" *ngFor= "let lists of list">
+    <div class="card "  >
   <img src="{{lists.photo_main}}"class="card-img-top" alt="..." width="50px" height="250px">
   <div class="card-body">
       <h3 class="card-text" style="text-align: center"> {{lists.title}}</h3>
       <h3></h3>
     <p class="card-text" style="text-align: center;">Price:{{lists.price}}</p>
-    <a routerLink="/listdet/{{lists.id}}"><button class="card-text btn btn-primary pb-4" style="text-align: center;" >View More</button></a>
+    <a routerLink="/listdet/{{lists.id}}"><button class="card-text btn btn-primary pb-4 ssd" style="text-align: center;" >View More</button></a>
   </div></div>
 </div></div></div>

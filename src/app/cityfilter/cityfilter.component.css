@@ -29,3 +29,7 @@ h1{
 .col-4{
     padding-bottom: 40px;
 }
+.card-body h3{
+    height: 20px;
+    padding-bottom: 5px;
+}

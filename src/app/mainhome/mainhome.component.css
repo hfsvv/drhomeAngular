@@ -11,6 +11,15 @@ p{
 .ss{
     text-align: center;
 }
+nav{
+    overflow: hidden;
+}
+.carousel{
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
+}
 .jjj{
     justify-content: center;
     justify-items: center;
@@ -35,6 +44,11 @@ p{
         color: #d70e1d
         
     }
+.gg{
+    background-color: #d70e1d;
+    border: #d70e1d;
+    color: white;
+}
 
 .vvv{
     text-align: center;

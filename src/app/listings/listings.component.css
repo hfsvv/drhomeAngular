@@ -5,7 +5,7 @@
     padding-right: 5.5rem;
     padding-left: 0.5rem;
 }
-button{
+.ssd{
     background-color: #d70e1d;
     border: #d70e1d;
     position:relative;
@@ -15,8 +15,22 @@ button:hover{
     background-color: white;
     border: #d70e1d; 
     color: #d70e1d;
+   
     
 }
+.fff{
+    line-height: 50px;
+}
+nav{
+    overflow: hidden;
+}
+.carousel{
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
+}
+
 .card{
     border-radius: 20px; 
     background-color: #33313B;
@@ -26,6 +40,11 @@ h1{
     padding-bottom: 20px;
     overflow: visible;
 }
-.col-4{
+.vvv{
     padding-bottom: 40px;
 }
+.card-body h3{
+    height: 20px;
+    padding-bottom: 5px;
+}
+

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/images/Dream-home-logo-vector.jpg" alt="" height="80px" width="320px"></a>
+      <a class="navbar-brand" href="#"><img src="assets/images/Dream-home-logo-vector.jpg" alt="" height="80px" width="220px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,12 +55,12 @@
         <div class="col-2"></div>
         <div class="col-8 d-flex justify-content-center" >
 <form action="" [formGroup]="postForm" (ngSubmit)="posts()" >
-    <table class="shadow mb-4 rounded " cellpadding="25" cellspacing="25" style=" width: 800px;">
+    <table class="shadow mb-4 rounded " cellpadding="25" cellspacing="25" >
        <tr>
            <div class="container">
 
            <div class="row">
-               <h3 style="text-align: center;"class="ss">Create Your Post Now...</h3>
+               <h3 style="text-align: center;"class="ss">Edit Your Post Now...</h3>
                <div class="col-12 ss">
                    <input type="text" class="form-control" placeholder="Title" name="title" formControlName="title">
                </div>
@@ -96,7 +96,7 @@
             </div>
             
 
-            <div class="col-4 ">
+            <div class="col-12 ">
                 <input type="file" class="" name="photo_main" (change)="fileup($event)"  formControlName="photo_main">
             </div>  
             <div class="col-8"></div>
